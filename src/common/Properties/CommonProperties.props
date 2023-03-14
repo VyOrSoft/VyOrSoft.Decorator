@@ -1,0 +1,17 @@
+<Project>
+		<PropertyGroup>
+				<ImplicitUsings>enable</ImplicitUsings>
+				<Nullable>enable</Nullable>
+				
+				<Product>VO.Essentials</Product>
+				<Description>This package contains common concerns functionality.</Description>
+				<Copyright>Copyright © 2023, Vyacheslav Orlov</Copyright>
+				<Authors>Vyacheslav Orlov</Authors>
+				<RepositoryType>git</RepositoryType>
+				<PackageProjectUrl>https://github.com/VyOrSoft/VyOrSoft.Decorator</PackageProjectUrl>
+				<PackageLicenseExpression>MIT</PackageLicenseExpression>
+				<RepositoryUrl>https://github.com/VyOrSoft/VyOrSoft.Decorator</RepositoryUrl>
+		</PropertyGroup>
+
+
+</Project>
