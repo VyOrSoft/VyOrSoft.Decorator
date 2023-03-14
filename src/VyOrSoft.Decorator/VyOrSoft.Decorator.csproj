@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$(MSBuildProjectDirectory)\..\common\Properties\CommonProperties.props" />
+  <Import Project="$(MSBuildProjectDirectory)\..\common\Properties\PackageProperties.props" />
+  <Import Project="Properties\Version.props" />
+  <Import Project="Properties\Testing.props" />
+  
+  <PropertyGroup>
+    <AssemblyTitle>VyOrSoft.Decorator</AssemblyTitle>
+    <AssemblyName>VyOrSoft.Decorator</AssemblyName>
+    <TargetFramework>net7.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Description>This package contains decorator functionality.</Description>
+  </PropertyGroup>
+
+</Project>
