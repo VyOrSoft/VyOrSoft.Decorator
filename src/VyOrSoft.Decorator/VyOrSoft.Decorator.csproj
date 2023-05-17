@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="$(MSBuildProjectDirectory)\..\common\Properties\CommonProperties.props" />
   <Import Project="$(MSBuildProjectDirectory)\..\common\Properties\PackageProperties.props" />
@@ -13,5 +13,14 @@
     <Nullable>enable</Nullable>
     <Description>This package contains decorator functionality.</Description>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <Folder Include="Options\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
 
 </Project>
