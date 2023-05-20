@@ -83,10 +83,12 @@ public sealed class ServiceTypeDecoratorTests
         var areServiceTypeDecoratorEquals = serviceTypeDecorator.Equals(serviceTypeDecorator2);
         var areServiceTypeDecoratorEqualsObject = serviceTypeDecorator.Equals((object)serviceTypeDecorator2);
         var areServiceTypeDecoratorEqualsIsEquivalentTo = serviceTypeDecorator.IsEquivalentTo(serviceTypeDecorator2);
+        var areServiceTypeDecoratorOperatorEquals = serviceTypeDecorator == serviceTypeDecorator2;
         //assets
         areServiceTypeDecoratorEquals.Should().BeTrue();
         areServiceTypeDecoratorEqualsObject.Should().BeTrue();
         areServiceTypeDecoratorEqualsIsEquivalentTo.Should().BeTrue();
+        areServiceTypeDecoratorOperatorEquals.Should().BeTrue();
     }
 
     [Fact]
@@ -106,10 +108,12 @@ public sealed class ServiceTypeDecoratorTests
         var areServiceTypeDecoratorEquals = serviceTypeDecorator.Equals(serviceTypeDecorator2);
         var areServiceTypeDecoratorEqualsObject = serviceTypeDecorator.Equals((object)serviceTypeDecorator2);
         var areServiceTypeDecoratorEqualsIsEquivalentTo = serviceTypeDecorator.IsEquivalentTo(serviceTypeDecorator2);
+        var areServiceTypeDecoratorOperatorEquals = serviceTypeDecorator == serviceTypeDecorator2;
         //assets
         areServiceTypeDecoratorEquals.Should().BeFalse();
         areServiceTypeDecoratorEqualsObject.Should().BeFalse();
         areServiceTypeDecoratorEqualsIsEquivalentTo.Should().BeFalse();
+        areServiceTypeDecoratorOperatorEquals.Should().BeFalse();
     }
 
     [Fact]
@@ -127,11 +131,13 @@ public sealed class ServiceTypeDecoratorTests
         var areServiceTypeDecoratorEquals = serviceTypeDecorator.Equals(testCases.InnerType);
         var areServiceTypeDecoratorEqualsObject = serviceTypeDecorator.Equals((object)testCases.InnerType);
         var areServiceTypeDecoratorEqualsIsEquivalentTo = serviceTypeDecorator.IsEquivalentTo(testCases.InnerType);
+        var areServiceTypeDecoratorOperatorEquals = serviceTypeDecorator == testCases.InnerType;
 
         //assets
         areServiceTypeDecoratorEquals.Should().BeFalse();
         areServiceTypeDecoratorEqualsObject.Should().BeFalse();
         areServiceTypeDecoratorEqualsIsEquivalentTo.Should().BeFalse();
+        areServiceTypeDecoratorOperatorEquals.Should().BeFalse();
     }
 
     private sealed class InnerTypeClass { }
