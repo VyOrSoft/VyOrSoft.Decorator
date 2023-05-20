@@ -8,6 +8,14 @@ namespace VyOrSoft.Decorator.IoC;
 public static class DecoratorServiceCollectionExtensions
 {
     public static IServiceCollection Decorate<TDecorated1, TDecorator>(this IServiceCollection services,
+        ServiceLifetime? decoratorServiceLifetime = default)
+        where TDecorated1 : notnull
+        where TDecorator : TDecorated1
+    {
+        return services;
+    }
+
+    public static IServiceCollection Decorate<TDecorated1, TDecorator>(this IServiceCollection services,
         Func<TDecorated1, IServiceProvider, TDecorator> decoratorImplementationFactory,
         ServiceLifetime? decoratorServiceLifetime = default)
         where TDecorated1 : notnull
